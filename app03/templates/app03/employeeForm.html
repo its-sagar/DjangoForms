@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block title %}
+<title>Employee</title>
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center">App03 Employee Details</h2>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form}}
+    <div >
+        <button class="btn btn-primary mt-2" type="submit">Sumbit</button>
+    </div>
+    
+</form>
+{% endblock %}

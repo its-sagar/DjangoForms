@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block title %}
+
+<title>Employees</title>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="list-group">
+    <a href="{% url 'employee01' %}" class="list-group-item list-group-item-action">App01 Simple Employee Form</a>
+
+    <a href="{% url 'employee02' %}" class="list-group-item list-group-item-action list-group-item-primary">App02 Employee Form With Float Field</a>
+
+    <a href="{% url 'employee03' %}" class="list-group-item list-group-item-action list-group-item-secondary">App03 Employee Form With Boolean Field</a>
+    
+    <a href="{% url 'employee04' %}" class="list-group-item list-group-item-action list-group-item-success">App04 Employee Form With Date Field</a>
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list groupitem</a>
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list groupitem</a>
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+    
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+</div>
+
+{% endblock %}
