@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'app04',
     'app05',
     'app06',
+    'app07',
     'crispy_forms',
     "crispy_bootstrap5",
 ]
@@ -132,6 +133,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICROOT = BASE_DIR/'static/'
+STATICFIELS_DIRS = [
+    BASE_DIR/'ProjectForms'/'static'
+]
+
+# Media File Setup
+
+MEDIAURL = '/media/'
+MEDIAROOT = BASE_DIR/'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
