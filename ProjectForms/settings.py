@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'app02',
     'app03',
     'app04',
+    'app05',
     'crispy_forms',
     "crispy_bootstrap5",
 ]
