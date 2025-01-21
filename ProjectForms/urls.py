@@ -33,4 +33,5 @@ urlpatterns = [
     path("app05/", include("app05.urls")),
     path("app06/", include("app06.urls")),
     path("app07/", include("app07.urls")),
+    path("app08/", include("app08.urls")),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
