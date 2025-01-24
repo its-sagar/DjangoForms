@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}
+
+<title>Employee Form</title>
+<link rel="stylesheet" href="{% static 'app10/css/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5 text-center">Employee Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+/* Horizontal Checkbox Styling */
+.position-checkbox {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    gap: 20px; /* Space between each checkbox-label pair */
+    align-items: center; /* Aligns all items in the flex container */
+}
+
+.position-checkbox .form-check {
+    display: flex;
+    align-items: center; /* Aligns checkbox and label vertically */
+    gap: 10px; /* Space between checkbox and label */
+    padding: 5px;
+}
+
+.position-checkbox .form-check-input {
+    margin: 0; /* Removes extra margin around checkbox */
+    width: 18px; /* Adjust checkbox size */
+    height: 18px;
+}
+
+.position-checkbox .form-check-label {
+    margin: 0; /* Removes any extra margin around the label */
+    font-size: 16px; /* Optional: Adjust label font size */
+}
